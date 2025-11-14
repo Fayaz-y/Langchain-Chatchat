@@ -406,7 +406,7 @@ class ApiModelSettings(BaseFileSettings):
                     "qwen2:7b",
                 ],
                 "embed_models": [
-                    "quentinz/bge-large-zh-v1.5",
+                    "quentinz/bge-large-en-v1.5",
                 ],
             }),
             PlatformConfig(**{
