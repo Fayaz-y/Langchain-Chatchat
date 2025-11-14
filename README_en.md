@@ -302,7 +302,7 @@ You will get:
 ```text 
 {
     "DEFAULT_LLM_MODEL": "glm4-chat",
-    "DEFAULT_EMBEDDING_MODEL": "bge-large-zh-v1.5",
+    "DEFAULT_EMBEDDING_MODEL": "bge-large-en-v1.5",
     "Agent_MODEL": null,
     "HISTORY_LEN": 3,
     "MAX_TOKENS": null,
@@ -353,7 +353,7 @@ $ chatchat-config model --set_model_platforms "[{
         \"autodl-tmp-glm-4-9b-chat\"
     ],
     \"embed_models\": [
-        \"bge-large-zh-v1.5\"
+        \"bge-large-en-v1.5\"
     ],
     \"image_models\": [],
     \"reranking_models\": [],
@@ -388,7 +388,7 @@ Successful output will be:
 ----------------------------------------------------------------------------------------------------
 知识库名称      ：samples
 知识库类型      ：faiss
-向量模型：      ：bge-large-zh-v1.5
+向量模型：      ：bge-large-en-v1.5
 知识库路径      ：/root/anaconda3/envs/chatchat/lib/python3.11/site-packages/chatchat/data/knowledge_base/samples
 文件总数量      ：47
 入库文件数      ：42
@@ -405,7 +405,7 @@ step `3.2`:
 
 ```shell
 (chatchat) [root@VM-centos ~]#  ls /root/anaconda3/envs/chatchat/lib/python3.11/site-packages/chatchat/data/knowledge_base/samples/vector_store
-bge-large-zh-v1.5  text-embedding-3-small
+bge-large-en-v1.5  text-embedding-3-small
 ```
 
 ##### Frequently asked questions
