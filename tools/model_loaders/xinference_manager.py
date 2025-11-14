@@ -106,17 +106,17 @@ def get_model_registrations():
 
 
 with st.sidebar:
-    st.subheader("请先执行 xinference 或 xinference-local 命令启动 XF 服务。然后将 XF 服务地址配置在下方。")
+    st.subheader("Please execute xinference or xinference-local command to start XF service first. Then configure the XF service address below. xinference 或 xinference-local 命令启动 XF 服务。然后将 XF 服务地址配置在下方。")
     xf_url = st.text_input("Xinference endpoint", "http://127.0.0.1:9997")
     st.divider()
     st.markdown(
-        "### 使用方法\n\n"
-        "- 场景1：我已经下载过模型，不想 XF 内置模型重复下载\n\n"
-        "- 操作：选择对应的模型后，填写好本地模型路径，点‘设置模型缓存’即可\n\n"
+        "Please execu### Usage Instructionste xinference or xinference-local command to start XF service first. Then configure the XF service address below.\n\n"
+        "- Scenario 1：I have already downloaded models and don't want XF built-in models to re-download\n\n"
+        "- Action：选择对应的模型后，填写好本地模型路径，点‘设置模型缓存’即可\n\n"
         "- 场景2：我想对 XF 内置模型做一些修改，又不想从头写模型注册文件\n\n"
-        "- 操作：选择对应的模型后，填写好本地模型路径，点‘注册为自定义模型’即可\n\n"
+        "- Action：选择对应的模型后，填写好本地模型路径，点‘注册为自定义模型’即可\n\n"
         "- 场景3：我不小心设置了错误的模型路径\n\n"
-        "- 操作：直接‘删除模型缓存’或更换正确的路径后‘设置模型缓存’即可\n\n"
+        "- Action：直接‘删除模型缓存’或更换正确的路径后‘设置模型缓存’即可\n\n"
     )
 client = get_client(xf_url)
 
